@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:focus{
+    outline:none;
+}
+body{
+    background:white;
+    font-family: 'Roboto', sans-serif;
+    width:800px;
+    height:530px;
+    margin:50px auto;
+}
+
+header{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:100px;
+}
+
+#logo{
+	position:absolute;
+	left:180px;
+	width:450px;
+	text-align:center;
+}
+
+nav{
+	position:relative;
+	margin:20px auto;
+	width:800px;
+	height:40px;
+}
+
+#top{
+    text-align:center;
+    line-height:13px;
+    font-size:18px;
+}
+
+#bot{
+    text-align:center;
+    position: relative;
+    margin-left:70px;
+    line-height:20px;
+	width:700px;
+    color:#999999;
+    font-size:15px;
+}
+
+.image{
+    margin-right:10px;
+}
+.form_co{
+    width:850px;
+    height:550;
+    margin:50px auto;
+    display:flex;
+    margin-right:10px;
+}
+
+.contact{
+    border-radius:10px;
+    position:
+    overflow:hidden;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    margin-right:10px;
+    display:flex;
+}
+
+form.contact{
+    width:62%;
+    padding:50px 40px;
+}
+
+
+form.contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+form.contact label{    
+    font-weight:500;
+    width:400px;
+}
+
+
+form.contact input,
+form.contact select,
+form.contact textarea{
+    width:100%;
+    padding:8px 0px 5px;
+    margin-bottom:20px;
+    border:2px solid #D1D1D1;
+    color: #5A5A5A;
+    font-size:14px;
+    font-weight:400;
+}
+
+form.contact input[type="button"]{
+    width:120px;
+    background:#CD1A53;
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    color:white;
+    padding:10px;
+    border:none;
+    border-radius:25px;
+    align-self:flex-end;
+    font-weight:400;
+    cursor: pointer;
+}
+
+
+form.contact input[type="button"]:hover{
+    background:#F8709C;
+}
+
+.modal_wrap{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index: 3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mensaje_modal{
+    background:white;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.5);
+    width:400px;
+    padding:30px 20px 15px;
+
+}
+
+.mensaje_modal h3{
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight:400;
+}
+
+
+.mensaje_modal h3:after{
+    content:'';
+    display:block;
+    width:100%;
+    height: 1px;
+    background:#C5C5C5;
+    margin:10px 0px 15px
+}
+
+.mensaje_modal p{
+    font-style: 16px;
+    columns: #606060;
+}
+
+.mensaje_modal #btnClose{
+    display:inline-block;
+    padding:3px 10px;
+    margin-top:10px;
+    background:#E25151;
+    color:FFF;
+    border: 2px solid #b14141;
+    cursor: pointer;
+    float: right;
+}
